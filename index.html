@@ -13,11 +13,8 @@
      <meta name="theme-color" content="#000000">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700,800&display=swap" rel="stylesheet">
     <title>Bendini is always root.</title>
-    <link rel="stylesheet" href="/css/login.css">
 </head>	
-	
-		<script src="/js/login.js"></script>
-	
+		
 <body>
     <div class="container">
 		<div id="logo-container">
@@ -36,4 +33,157 @@
         <footer>Developed By <strong>Bendini</strong></footer>
     </div>
 </body>
+
+
+<style>
+
+	
+
+html, body {
+
+	    overflow-x: hidden; /* Yatay kaydırmayı kapatır */
+
+}
+
+
+        body {
+            touch-action: pan-x pan-y; /* Kaydırmayı etkin tutar, zoom yapmayı engeller */
+        }
+
+body {
+    background-image: url('./img/arkaplan.jpg');
+    background-position: center; /* Arkaplanın ortada konumlanması */
+
+/*	background-image: url('./img/arkaplan.jpg');
+    background-repeat: no-repeat;
+    background-position: center,top; 
+    background-size: auto; 
+    background-color: black; /* Sayfanın geri kalanının siyah renk olması */ */
+   
+            font-family: Poppins, sans-serif;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #error-message {
+            color: white;
+			            font-family: Poppins, sans-serif;
+            display: none;
+            margin-bottom: 10px;
+            text-align: center;
+			 
+            background-color: #333;
+			font-size: 12px;
+			border-radius: 5px; /* Köşeleri ovalleştirir */
+            margin: 5px; /* Etrafında boşluk bırakır */
+            padding: 5px;
+			flex-wrap: nowrap; /* Alt satıra geçmeyi engeller */
+        
+        }
+        .message-container {
+            height: 0px; /* Sabit yükseklik */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+			}
+			
+       
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(55, 55, 55, 0.0); /* Arka planı %0 opaklıkta yap */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.0);
+    width: 100%;
+    max-width: 300px; /* Maksimum genişlik */
+    position: relative; /* Position ekleyerek top ile yukarı kaydırma yapabilmek için */
+    top: -50px; /* Sayfanın yukarısına kaydırma */
+}
+
+
+#logo-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+#logo1, #logo2 {
+    position: absolute;
+    top: -10;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    transition: opacity 1s ease;
+}
+
+#logo2 {
+    opacity: 0; /* Başlangıçta görünmez */
+}
+
+
+
+
+        input {            
+			font-family: Poppins, sans-serif;
+            font-size: 14px;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 0px solid #ccc;
+            border-radius: 10px;
+            background-color: rgba(55, 55, 55, 0.50); /* %55 şeffaflık */
+            color: white; /* Yazı rengi beyaz */
+			outline: none !important;
+  		    box-shadow: none !important;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #151515;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 10px;
+			outline: none !important;
+  		    box-shadow: none !important;
+        }
+        button:hover {
+            background-color: #101010;
+        }
+        footer {
+			font-family: Poppins, sans-serif;
+            margin-top: 20px;
+            text-align: center;
+            color: 9a9cab;
+			
+        }
+        footer strong {
+            color: white; /* Bendini yazısı beyaz */
+			    font-weight: normal;
+        }
+
+		input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px black inset !important;
+    box-shadow: 0 0 0 1000px #CCC inset !important;
+}
+
+        input, textarea, select {
+            font-size: 16px; /* iOS Safari'nin zoom yapmasını engellemek için 16px ve üstü olmalı */
+        }
+
+</style>
+
+	
 </html>
